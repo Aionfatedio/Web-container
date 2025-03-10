@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/node_modules/aplayer/dist/APlayer.min.css">
+    <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+    
+    <aside class="sidebar collapsed">
+        <header class="sidebar-header">
+            <a href="#information" class="header-logo">
+                <img src="logo.png" alt="CodingNepal">
+            </a>
+            <span class="username">AIONFATEDIO</span>
+            <button class="sidebar-toggler">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+        </header>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                   <a href="#home" class="nav-link">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="nav-label">主页</span>
+                   </a> 
+                   <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-title">主页</a>
+                    </li>
+                   </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#workspace" class="nav-link">
+                        <i class="fa-solid fa-atom-simple"></i>
+                        <span class="nav-label">工作台</span>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-title">工作台</a>
+                        </li>
+                    </ul>
+                </li> 
+
+                <li class="nav-item dropdown-container">
+                    <a href="#article" class="nav-link dropdown-toggle">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span class="nav-label">文章</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-title">文章</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#IT" class="nav-link dropdown-link"><i class="fa-solid fa-code"></i>IT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#game" class="nav-link dropdown-link"><i class="fa-solid fa-gamepad"></i>游戏</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#palace" class="nav-link dropdown-link"><i class="fa-solid fa-trophy"></i>名人堂</a>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="nav-item dropdown-container">
+                    <a href="#forum" class="nav-link dropdown-toggle">
+                        <i class="fa-solid fa-comments"></i>
+                        <span class="nav-label">论坛</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-title">论坛</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#post" class="nav-link dropdown-link"><i class="fa-solid fa-pen-to-square"></i>发布</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#categories" class="nav-link dropdown-link"><i class="fa-solid fa-list"></i>板块</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#favorites" class="nav-link dropdown-link"><i class="fa-solid fa-bookmark"></i>我的收藏</a>
+                        </li>
+                    </ul>
+                 </li>
+                 <li class="nav-item dropdown-container">
+                    <a href="#netdisk" class="nav-link dropdown-toggle">
+                        <i class="fa-solid fa-cloud"></i>
+                        <span class="nav-label">网盘</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-title">网盘</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#upload" class="nav-link dropdown-link"><i class="fa-solid fa-arrow-up-from-bracket"></i>上传</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#filemanagement" class="nav-link dropdown-link"><i class="fa-solid fa-folder-gear"></i>文件管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#bin" class="nav-link dropdown-link"><i class="fa-solid fa-trash-can-clock"></i>回收站</a>
+                        </li>
+                    </ul>
+                </li>
+                 <li class="nav-item dropdown-container">
+                    <a href="#tools" class="nav-link dropdown-toggle">
+                        <i class="fa-solid fa-grid-2"></i>
+                        <span class="nav-label">工具</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-title">工具</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#music" class="nav-link dropdown-link"><i class="fa-solid fa-music"></i>音乐</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#addon" class="nav-link dropdown-link"><i class="fa-solid fa-puzzle-piece"></i>拓展</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link dropdown-link modal1"><i class="fa-solid fa-circle-info"></i>关于</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                 <li class="nav-item">
+                    <a href="#message" class="nav-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="nav-label">消息</span>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-title">消息</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#settings" class="nav-link">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="nav-label">设置</span>
+                    </a> 
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-title">设置</a>
+                        </li>
+                    </ul>
+                 </li>
+            </ul>
+            <ul  class="nav-list secondary-nav">
+                <li class="nav-item">
+                    <a href="#information" class="nav-link">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="nav-label">个人信息</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="nav-label">登出</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <!-- 默认 -->
+        <div class="content-page active" id="home">
+            <h2>主页</h2>
+            <p>欢迎来到主页面</p>
+            
+        </div>
+        
+        <div class="content-page" id="workspace">
+            <h2>工作台</h2>
+        </div>
+
+        <div class="content-page" id="palace">
+            <h2>名人堂</h2>
+        </div>
+
+        <div class="content-page" id="article">
+            <h2>文章</h2>
+        </div>
+
+        <div class="content-page" id="IT">
+            <h2>IT界面</h2>
+        </div>
+
+        <div class="content-page" id="anime">
+            <h2>动画界面</h2>
+        </div>
+
+        <div class="content-page" id="game">
+            <h2>游戏界面</h2>
+        </div>
+
+        <div class="content-page" id="software">
+            <h2>软件界面</h2>
+        </div>
+
+        <div class="content-page" id="forum">
+            <h2>论坛</h2>
+        </div>
+        
+        <div class="content-page" id="post">
+            <h2>投稿界面</h2>
+        </div>
+
+        <div class="content-page" id="categories">
+            <h2>板块界面</h2>
+        </div>
+
+        <div class="content-page" id="favorites">
+            <h2>我的收藏界面</h2>
+        </div>
+
+        <div class="content-page" id="netdisk">
+            <h2>网盘</h2>
+        </div>
+
+        <div class="content-page" id="upload">
+            <h2>上传界面</h2>
+        </div>
+
+        <div class="content-page" id="filemanagement">
+            <h2>文件管理界面</h2>
+        </div>
+
+        <div class="content-page" id="bin">
+            <h2>回收站界面</h2>
+        </div>
+
+        <div class="content-page" id="tools">
+            <h2>工具</h2>
+        </div>
+
+        <div class="content-page" id="music">
+            <h2>音乐界面</h2><br>
+            <p>Powered by <span class="colorful-text">Aplayer</span></p>
+            <h3>本地音乐</h3>
+            <div id="aplayer01"></div>
+            <h3>在线音乐</h3>
+            <div class="music-settings" style="margin: 10px 0; display: flex; align-items: center; gap: 10px;">
+                <select id="musicPlatform" class="musicbutton">
+                    <option value="netease">网易云音乐</option>
+                    <option value="tencent">QQ音乐</option>
+                    <option value="kugou">酷狗音乐</option>
+                </select>
+                <input type="text" id="playlistId" placeholder="输入歌单ID" class="idinput">
+                <button id="applyMusicSettings" class="musicbutton" >确认</button>
+            </div>
+            
+            <div id="metingContainer">
+                <meting-js server="tencent" type="playlist" id="9380945212" preload="none" autoplay="false" mutex="true"></meting-js>
+            </div>
+        </div>
+
+        <div class="content-page" id="addon">
+            <h2>拓展界面</h2>
+        </div>
+
+        <div class="content-page" id="about">
+            <h2>关于</h2><br>
+            <p>设备时间: <p id="time">XX:XX:XX</p></p>
+            <p>设备环境: <p class="modal1-text">检测失败</p></p>
+            <p>浏览器环境:<br> <span class="modal2-text">检测失败</span><span class="browserinfo">检测失败</span></p>
+        </div>
+
+        <div class="content-page" id="message">
+            <h2>消息</h2>
+        </div>
+        
+        
+        <div class="content-page" id="settings">
+            <h2>系统设置</h2>
+            <form class="settings-form">
+                
+            </form>
+        </div>
+        
+        <div class="content-page" id="information">
+            <h2>个人信息</h2>
+        </div>
+
+    </main>
+    
+    <div class="logout-modal" id="logoutModal">
+        <div class="logout-modal-content">
+            <h3><i class="fa-solid fa-right-from-bracket"></i>登出</h3>
+            <p>您确定要退出登录吗？</p>
+            <div class="logout-modal-buttons">
+                <button class="logout-cancel">取消</button>
+                <button class="logout-confirm">确认</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="userscript.js"></script>
+    <script src="assets/node_modules/aplayer/dist/APlayer.min.js"></script>
+    <script src="assets/MetingJS/source/Meting.js"></script>
+    <script type="text/javascript">
+        const ap = new APlayer({
+            container: document.getElementById('aplayer01'),
+            mini: false,
+            autoplay: false,
+            theme: '#FADFA3',
+            loop: 'all',
+            order: 'random',
+            preload: 'auto',
+            volume: 0.7,
+            mutex: true,
+            listFolded: false,
+            listMaxHeight: 90,
+            lrcType: 3,
+         audio: [
+        {
+            name: '今、歩き出す君へ',
+            artist: 'Ceui',
+            url: 'assets/music/Ceui - 今、歩き出す君へ。 (献给此刻迈步前行的你。)_EM.flac',
+            cover: 'assets/music/cover1.jpg',
+            lrc: 'assets/music/Ceui - 今、歩き出す君へ。 (献给此刻迈步前行的你。)_EM.lrc',
+            theme: '#ebd0c2'
+        }
+    ]
+    
+});
+        
+    </script>
+    
+    
+</body>
+</html>

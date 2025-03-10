@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <section id="login-form">
+        <h1>AIONFATEDIO</h1>
+        <div class="input-wrap in-1">
+            <input type="text" id="account" placeholder="请输入账号" spellcheck="false" required>
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="input-wrap in-2">
+            <input type="password" id="password" placeholder="请输入密码" spellcheck="false" required>
+            <i class="fa-solid fa-eye" id="togglePassword" style="display: none;"></i>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="rem">
+            <p>
+                <input type="checkbox">
+                <a>记住密码</a>
+            </p>
+            <a>忘记密码?</a>
+        </div>
+        <div id="loader" class="loading-overlay">
+            <div class="loading-animation"></div>
+        </div>        
+        <button id="button" onclick="login()">登录</button>
+        
+        <!-- 添加第三方登录 
+        <div class="third-party-login">
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-text">其他方式登录</span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-btn qq" onclick="qqLogin()">
+                    <i class="fa-brands fa-qq"></i>
+                </a>
+                <a href="#" class="social-btn google" onclick="googleLogin()">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="#" class="social-btn github" onclick="weixinLogin()">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div> -->
+
+        <p class="reg">还没有账号?
+            <a class="register" href="register.html">注册</a>
+        </p>
+    </section>
+
+    <svg class="svg-ripple" width="100" height="100" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="0" fill="none" stroke="rgb(4, 238, 255)" stroke-width="2">
+            <animate attributeName="r" from="0" to="50" dur="0.6s" fill="freeze" />
+            <animate attributeName="opacity" from="1" to="0" dur="0.6s" fill="freeze" />
+        </circle>
+    </svg>
+    <script src="script.js"></script>
+</body>
+</html>
