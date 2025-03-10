@@ -1,3 +1,3 @@
 # Web-container
 
-a normal web based on html&css&js,which is building... 
+a normal web is based on html&css&js.
